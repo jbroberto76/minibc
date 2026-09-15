@@ -1,5 +1,6 @@
 ---
 theme: default
+colorSchema: dark
 title: Tecnologia Blockchain
 info: |
   ## Tecnologia Blockchain
