@@ -466,13 +466,13 @@ Outros Setores
 layout: two-cols
 ---
 
-# 📓 Analogia
+# Analogia
 
 ::left::
 
 <div class="pr-4">
 
-### 🗄️ Banco de Dados
+### Banco de Dados
 
 Um **caderno numa sala trancada**.
 
@@ -486,7 +486,7 @@ Só quem tem a chave (admin) entra, escreve, apaga ou corrige.
 
 <div class="pl-4">
 
-### 🔗 Blockchain
+### Blockchain
 
 Um **caderno fotocopiado para 1.000 pessoas**.
 
@@ -522,7 +522,8 @@ layout: section
 
 ---
 
-# ✅ Use Blockchain quando...
+# *Blockchain*
+Aplicabilidade
 
 <v-clicks>
 
@@ -567,19 +568,10 @@ class: text-center
 </div>
 
 ---
-layout: center
-class: text-center
+layout: fact
 ---
 
-# Obrigado! 🙌
-
-<div class="mt-8 text-lg opacity-70">
-Perguntas?
-</div>
-
-<div class="mt-12 text-sm opacity-50">
-Slides feitos com <a href="https://sli.dev" target="_blank">Slidev</a>
-</div>
+# Perguntas
 
 ---
 
