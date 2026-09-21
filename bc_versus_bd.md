@@ -1,54 +1,42 @@
 ---
 theme: default
 colorSchema: dark
-title: *Blockchain* vs. Bancos de Dados
+title: Blockchain vs. Bancos de Dados
 description: Grupo de Estudos em *Blockchain*
-info: |
-  ## Aula introdutória
-  Diferenças entre blockchain e bancos de dados convencionais.
-class: text-center
+layout: image
+image: /cover.svg
 highlighter: shiki
 lineNumbers: false
 drawings:
   persist: false
 transition: slide-left
 mdc: true
+author: José Roberto Bezerra
 ---
 
 # *Blockchain* versus Bancos de Dados
-
-Duas formas de guardar informação — e por que elas não são a mesma coisa
-
-<div class="pt-12">
-  <span class="px-2 py-1 rounded bg-blue-500 text-white text-sm">
-    Aula introdutória
-  </span>
-</div>
-
----
-layout: fact
----
-
-# Por que você confia no extrato do seu banco?
+Duas formas de guardar informação
 
 ---
 
 # Objetivos de Aprendizagem
-
-<v-clicks>
 
 - Listar as principais funções de um banco de dados tradicional
 - Listar as principais funções de uma rede *blockchain*
 - Comparar as duas tecnologias
 - Identificar a aplicabilidade de cada tecnologia
 
-</v-clicks>
-
 ---
 layout: section
 ---
 
 # Bancos de Dados Tradicionais
+
+---
+layout: fact
+---
+
+# Por que você confia no extrato do seu banco?
 
 ---
 
@@ -60,7 +48,7 @@ Conceito
 <v-clicks>
 
 - Coleção estruturada de dados
-- Permite consultas rápidas (SQL, NoSQL)
+- Permite consultas rápidas (SQL ou NoSQL)
 - Possui administração centralizada
 - Suporta operações de leitura e escrita
 - Amplamente adotado em sistemas digitais
@@ -76,28 +64,28 @@ Características
 
 <div class="p-4 rounded bg-blue-500 bg-opacity-10 border border-blue-500">
 
-### 🏛️ Centralizado
+### Centralizado
 Geralmente há um servidor ou entidade que controla tudo.
 
 </div>
 
 <div class="p-4 rounded bg-green-500 bg-opacity-10 border border-green-500">
 
-### 🔑 Permissão Controlada
+### Permissão Controlada
 Quem define quem lê/escreve é o dono do sistema.
 
 </div>
 
 <div class="p-4 rounded bg-yellow-500 bg-opacity-10 border border-yellow-500">
 
-### ✏️ Alterável
+### Modificável
 `UPDATE` e `DELETE` são operações comuns.
 
 </div>
 
 <div class="p-4 rounded bg-purple-500 bg-opacity-10 border border-purple-500">
 
-### ⚡ Alta Performance
+### Alta Performance
 Projetado para velocidade e eficiência.
 
 </div>
@@ -108,12 +96,12 @@ Projetado para velocidade e eficiência.
 
 # Exemplos
 
-- MySQL <logos-mysql />
+- <logos-mysql />
 - PostgreSQL <logos-postgresql />
-- Oracle <logos-oracle />
-- Oracle <logos-mongodb />
+- <logos-oracle />
+- MongoDB <logos-mongodb-icon />
 - Redis <logos-redis />
-- SQL Sever <logos-sqlserver />
+- SQL Sever
 
 ---
 layout: section
@@ -148,28 +136,28 @@ Características
 
 <div class="p-4 rounded bg-blue-500 bg-opacity-10 border border-blue-500">
 
-### 🌐 Descentralizado
+### Descentralizado
 Não há autoridade central controlando os dados.
 
 </div>
 
 <div class="p-4 rounded bg-green-500 bg-opacity-10 border border-green-500">
 
-### 🔒 Imutável
+### Imutável
 Registros são permanentes (*append-only*).
 
 </div>
 
 <div class="p-4 rounded bg-yellow-500 bg-opacity-10 border border-yellow-500">
 
-### 👁️ Transparente
+### Transparente
 Todos os participantes veem o mesmo histórico.
 
 </div>
 
 <div class="p-4 rounded bg-purple-500 bg-opacity-10 border border-purple-500">
 
-### 🤝 Consenso
+### Consenso
 As regras definem o que é válido, não um admin.
 
 </div>
@@ -178,38 +166,29 @@ As regras definem o que é válido, não um admin.
 
 ---
 
-# Exemplos Conhecidos
+# *Blockchains* Típicas
+Exemplos
 
-<div class="grid grid-cols-3 gap-4 mt-8 text-center">
+<div class="grid grid-cols-2 gap-4 mt-8 text-center">
 
 <div class="p-6 rounded bg-gray-500 bg-opacity-10">
-  <div class="text-4xl">₿</div>
+  <div class="text-4xl"><logos-bitcoin /></div>
   <div class="mt-2 font-bold">Bitcoin</div>
 </div>
 
 <div class="p-6 rounded bg-gray-500 bg-opacity-10">
-  <div class="text-4xl">⟠</div>
+  <div class="text-4xl"><token-branded-ethereum /></div>
   <div class="mt-2 font-bold">Ethereum</div>
 </div>
 
 <div class="p-6 rounded bg-gray-500 bg-opacity-10">
-  <div class="text-4xl">🏢</div>
-  <div class="mt-2 font-bold">Hyperledger Fabric</div>
-</div>
-
-<div class="p-6 rounded bg-gray-500 bg-opacity-10">
-  <div class="text-4xl">◎</div>
+  <div class="text-4xl"><token-branded-solana /></div>
   <div class="mt-2 font-bold">Solana</div>
 </div>
 
 <div class="p-6 rounded bg-gray-500 bg-opacity-10">
-  <div class="text-4xl">🔷</div>
-  <div class="mt-2 font-bold">Polygon</div>
-</div>
-
-<div class="p-6 rounded bg-gray-500 bg-opacity-10">
-  <div class="text-4xl">🌾</div>
-  <div class="mt-2 font-bold">AgriLedger</div>
+  <div class="text-4xl"><token-branded-bnb /></div>
+  <div class="mt-2 font-bold">BNB Chain</div>
 </div>
 
 </div>
@@ -221,8 +200,6 @@ layout: section
 # Comparativo
 
 ---
-layout: default
----
 
 # Bancos de Dados
 Varejo e Finanças
@@ -231,7 +208,7 @@ Varejo e Finanças
 
 <div class="p-4 rounded bg-blue-500 bg-opacity-10 border border-blue-500">
 
-### 🛒 Varejo e E-commerce
+### Varejo e E-commerce
 - Carrinho de compras (Amazon, Mercado Livre)
 - Catálogo de produtos
 - Histórico de pedidos
@@ -241,7 +218,7 @@ Varejo e Finanças
 
 <div class="p-4 rounded bg-green-500 bg-opacity-10 border border-green-500">
 
-### 🏦 Serviços Financeiros
+### Serviços Financeiros
 - Core bancário (saldo, extrato)
 - Sistema de cartões de crédito
 - Folha de pagamento
@@ -251,20 +228,19 @@ Varejo e Finanças
 
 </div>
 
-<div class="mt-6 p-3 rounded bg-yellow-500 bg-opacity-10 border-l-4 border-yellow-500 text-sm">
-⚡ <b>Por quê?</b> Alta performance, transações ACID e uma autoridade central clara (o banco ou a loja).
-</div>
+
+> Por quê? Alta performance, transações ACID e uma autoridade central clara (o banco ou a loja).
 
 ---
 
 # Bancos de Dados
-Saúde, Educação e Governo
+Saúde e Educação
 
 <div class="grid grid-cols-2 gap-4 mt-4">
 
 <div class="p-4 rounded bg-red-500 bg-opacity-10 border border-red-500">
 
-### 🏥 Saúde
+### Saúde
 - Prontuário eletrônico
 - Agendamento de consultas
 - Estoque de medicamentos
@@ -284,11 +260,16 @@ Saúde, Educação e Governo
 
 </div>
 
+---
+
+# Bancos de Dados
+Corporativo e Governos
+
 <div class="grid grid-cols-2 gap-4 mt-4">
 
 <div class="p-4 rounded bg-indigo-500 bg-opacity-10 border border-indigo-500">
 
-### 🏢 Corporativo / Governo
+### Corporativo / Governo
 - ERP (SAP, TOTVS)
 - CRM (Salesforce)
 - RH e folha
@@ -298,7 +279,7 @@ Saúde, Educação e Governo
 
 <div class="p-4 rounded bg-pink-500 bg-opacity-10 border border-pink-500">
 
-### 🎮 Mídia e Entretenimento
+### Mídia e Entretenimento
 - Netflix / Spotify
 - Redes sociais (posts, comentários)
 - Games online (ranking, inventário)
@@ -307,9 +288,8 @@ Saúde, Educação e Governo
 
 </div>
 
-<div class="mt-4 p-3 rounded bg-yellow-500 bg-opacity-10 border-l-4 border-yellow-500 text-sm">
-🔐 <b>Por quê?</b> LGPD exige exclusão, dados sensíveis, correções são rotina e há um dono claro.
-</div>
+
+> Por quê? LGPD exige exclusão, dados sensíveis, correções são rotina e há um dono claro.
 
 ---
 
@@ -319,35 +299,33 @@ Cadeia de Suprimentos
 <div class="grid grid-cols-2 gap-3 mt-4 text-sm">
 
 <div class="p-3 rounded bg-orange-500 bg-opacity-10 border border-orange-500">
-☕ <b>Rastreio de café</b><br/>
+<b>Rastreio de café</b><br/>
 <span class="opacity-70">Produtor → exportador → torrefação → loja</span>
 </div>
 
 <div class="p-3 rounded bg-green-500 bg-opacity-10 border border-green-500">
-🥬 <b>Walmart + IBM Food Trust</b><br/>
+<b>Walmart + IBM Food Trust</b><br/>
 <span class="opacity-70">Rastreia origem de contaminação em segundos</span>
 </div>
 
 <div class="p-3 rounded bg-blue-500 bg-opacity-10 border border-blue-500">
-🚢 <b>Maersk TradeLens</b><br/>
+<b>Maersk TradeLens</b><br/>
 <span class="opacity-70">Documentos entre armadores, portos e alfândegas</span>
 </div>
 
 <div class="p-3 rounded bg-pink-500 bg-opacity-10 border border-pink-500">
-💎 <b>De Beers Tracr</b><br/>
+<b>De Beers Tracr</b><br/>
 <span class="opacity-70">Prova que o diamante não é "de sangue"</span>
 </div>
 
 <div class="p-3 rounded bg-red-500 bg-opacity-10 border border-red-500">
-🥩 <b>Carne bovina</b> (JBS, Minerva)<br/>
+<b>Carne bovina</b> (JBS, Minerva)<br/>
 <span class="opacity-70">Rastrear fazenda e evitar desmatamento</span>
 </div>
 
 </div>
 
-<div class="mt-5 p-3 rounded bg-blue-500 bg-opacity-10 border-l-4 border-blue-500 text-sm">
-💡 <b>Insight famoso:</b> o rastreio de alface no Walmart caiu de <b>7 dias</b> para <b>2,2 segundos</b>.
-</div>
+> Insight famoso: o rastreio de alface no Walmart caiu de <b>7 dias</b> para <b>2,2 segundos</b>.
 
 ---
 
@@ -358,7 +336,7 @@ Finanças, Arte e Governo
 
 <div class="p-3 rounded bg-yellow-500 bg-opacity-10 border border-yellow-500">
 
-### 💰 Cripto & DeFi
+### Cripto & DeFi
 - Bitcoin
 - Ethereum
 - Stablecoins (USDC, USDT)
@@ -369,7 +347,7 @@ Finanças, Arte e Governo
 
 <div class="p-3 rounded bg-pink-500 bg-opacity-10 border border-pink-500">
 
-### 🎨 NFTs
+### NFTs
 - Arte digital (Beeple)
 - Ingressos de eventos
 - ENS (domínios)
@@ -379,7 +357,7 @@ Finanças, Arte e Governo
 
 <div class="p-3 rounded bg-blue-500 bg-opacity-10 border border-blue-500">
 
-### 🏛️ Governo
+### Governo
 - Registro de imóveis (Suécia, Geórgia)
 - Cartório digital (Brasil)
 - e-Residency (Estônia)
@@ -391,7 +369,7 @@ Finanças, Arte e Governo
 </div>
 
 <div class="mt-5 p-3 rounded bg-purple-500 bg-opacity-10 border-l-4 border-purple-500 text-sm">
-🌍 <b>Por quê?</b> Múltiplos atores, ausência de autoridade central e necessidade de auditoria pública.
+<b>Por quê?</b> Múltiplos atores, ausência de autoridade central e necessidade de auditoria pública.
 </div>
 
 ---
@@ -403,7 +381,7 @@ Outros Setores
 
 <div class="p-4 rounded bg-red-500 bg-opacity-10 border border-red-500">
 
-### 🏥 Saúde
+### Saúde
 - Prontuário compartilhado entre hospitais
 - Rastreio de medicamentos
 - Ensaios clínicos
@@ -413,7 +391,7 @@ Outros Setores
 
 <div class="p-4 rounded bg-purple-500 bg-opacity-10 border border-purple-500">
 
-### 🎓 Educação
+### Educação
 - Diplomas e certificados verificáveis
 - Histórico escolar portável
 - Credenciais profissionais
@@ -422,11 +400,16 @@ Outros Setores
 
 </div>
 
+---
+
+# *Blockchain*
+Outros Setores
+
 <div class="grid grid-cols-2 gap-4 mt-4">
 
 <div class="p-4 rounded bg-green-500 bg-opacity-10 border border-green-500">
 
-### ⚡ Energia & ESG
+### Energia & ESG
 - Créditos de carbono
 - Comércio de energia solar (Power Ledger)
 - Reciclagem (Plastic Bank)
@@ -436,7 +419,7 @@ Outros Setores
 
 <div class="p-4 rounded bg-indigo-500 bg-opacity-10 border border-indigo-500">
 
-### 🎮 Outros
+### Outros
 - Axie Infinity (game)
 - Decentraland (metaverso)
 - Jornalismo (Civil)
@@ -463,14 +446,12 @@ Outros Setores
 | **Governança** | Empresa/instituição | Rede/protocolo |
 
 ---
-layout: two-cols
+layout: two-cols-header
 ---
 
 # Analogia
 
 ::left::
-
-<div class="pr-4">
 
 ### Banco de Dados
 
@@ -480,11 +461,7 @@ Só quem tem a chave (admin) entra, escreve, apaga ou corrige.
 
 **Rápido e eficiente**, mas você precisa confiar em quem tem a chave.
 
-</div>
-
 ::right::
-
-<div class="pl-4">
 
 ### Blockchain
 
@@ -493,8 +470,6 @@ Um **caderno fotocopiado para 1.000 pessoas**.
 Quando alguém escreve uma página nova, todos verificam juntos.
 
 Ninguém consegue apagar uma página antiga **sem que todos percebam**.
-
-</div>
 
 ---
 layout: section
@@ -506,24 +481,24 @@ layout: section
 
 # Use Banco de Dados Tradicional quando...
 
+> Na dúvida, comece por aqui. Bancos tradicionais resolvem 90% dos casos.
+
 <v-clicks>
 
 - Há uma **entidade confiável** que controla os dados
 - **Performance** e **custo** são críticos
 - Dados precisam ser **atualizados ou excluídos**
-- Requisitos legais como **LGPD** exigem exclusão
+- Requisitos legais, como **LGPD** exigem exclusão
 - Ex: sistema de RH, e-commerce, app bancário interno
 
 </v-clicks>
-
-<div class="mt-8 p-4 rounded bg-blue-500 bg-opacity-10 border-l-4 border-blue-500">
-💡 <b>Na dúvida, comece por aqui.</b> Bancos tradicionais resolvem 90% dos casos.
-</div>
 
 ---
 
 # *Blockchain*
 Aplicabilidade
+
+> Cuidado: *Blockchain* é caro, lento e complexo. Só use quando o problema exigir.
 
 <v-clicks>
 
@@ -535,9 +510,6 @@ Aplicabilidade
 
 </v-clicks>
 
-<div class="mt-8 p-4 rounded bg-purple-500 bg-opacity-10 border-l-4 border-purple-500">
-⚠️ <b>Cuidado:</b> blockchain é caro, lento e complexo. Só use quando o problema exigir.
-</div>
 
 ---
 layout: fact
@@ -552,20 +524,14 @@ layout: fact
 > É uma **ferramenta diferente** voltada para um **problema diferente**: confiança sem intermediário.
 
 ---
-layout: center
-class: text-center
----
 
-# Para ir além
+# Referências
 
-<div class="text-left inline-block mt-8">
-
-- **"Blockchain Basics"** — Daniel Drescher
-- **"Mastering Bitcoin"** — Andreas Antonopoulos
-- **Explorador de blocos:** [etherscan.io](https://etherscan.io)
-- **Visualização:** [blockchain-demo.herokuapp.com](https://blockchain-demo.herokuapp.com)
-
-</div>
+- [Blockchain vs Banco de Dados: Entenda a Diferença](https://101blockchains.com/pt/blockchain-vs-banco-de-dados/)
+- *Blockchain Basics* — Daniel Drescher
+- *Mastering Bitcoin* — Andreas Antonopoulos [Bitcoin Book](https://github.com/bitcoinbook/bitcoinbook)
+- Explorador de blocos do Ethereum: [etherscan.io](https://etherscan.io)
+- Explorador de blocos do Bitcoin: [Mempool](https://mempool.space/pt/)
 
 ---
 layout: fact
@@ -574,8 +540,5 @@ layout: fact
 # Perguntas
 
 ---
-
-# Referências
-
-- [Blockchain vs Banco de Dados: Entenda a Diferença](https://101blockchains.com/pt/blockchain-vs-banco-de-dados/)
-- 
+src: /snippets/end.md 
+---
