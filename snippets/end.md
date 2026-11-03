@@ -9,7 +9,7 @@ image: /cover_down.svg
 
 <p style="line-height: normal">
 
-<mdi-email class="inline-block"/> [jbroberto@ifce.edu.br](jbroberto@ifce.edu.br)<br>
+<!-- <mdi-email class="inline-block"/> [jbroberto@ifce.edu.br](jbroberto@ifce.edu.br)<br> -->
 
 <carbon-logo-github class="inline-block"/> [jbroberto76/minibc](https://github.com/jbroberto76/minibc)<br>
 

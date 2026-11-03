@@ -99,6 +99,28 @@ Gargalos
 - Armazenamento de estado
 
 ---
+layout: section
+---
+
+# Tipos de Redes
+
+---
+
+---
+layout: section
+---
+
+# EVM
+
+---
+
+---
+layout: section
+---
+
+# IPFS
+
+---
 
 
 
